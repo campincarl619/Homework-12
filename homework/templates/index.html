@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Mars Web Scrape</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>	
+
+<body>
+	<font face="Arial"">
+
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Mission To Mars</h1>
+			<p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    	</div>
+    </div>
+	
+	<div class="container-fluid">
+		<div class="container">
+			<h1>Latest Mars News:</h1>
+			<h3>{{news.Title}}</h3>
+			<p>{{news.Paragraph}}</p>
+			<p>{{news.Test}}</p>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class ="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h1>Featured Mars image</h1>
+					<img style="width: 100%" src={{news.featImg}}>
+				</div>
+				<div class="col-md-4">
+					<h4>Current weather on mars</h4>
+					<p>{{news.twit}}</p>	
+					<div>
+						TABLE GOES HERE!!!!!!!!!!!!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h1 style="text-align: center;">Mars Hemispheres</h1>
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img style="width: 100%" src={{news.hemi1}}>
+					<h3>Cerberus Hemisphere</h3>
+				</div>
+				<div class="col-md-6">
+					<img style="width: 100%" src="{{news.hemi2}}">
+					<h3>Schiaparelli Hemisphere</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img style="width: 100%" src={{news.hemi3}}>
+					<h3>Syrtis Major Hemisphere</h3>
+				</div>
+				<div class="col-md-6">
+					<img style="width: 100%" src={{news.hemi4}}>
+					<h3>Valles Manineris</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
